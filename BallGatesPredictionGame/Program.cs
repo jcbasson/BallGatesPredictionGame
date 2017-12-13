@@ -34,7 +34,7 @@ namespace BallGatesPredictionGame
             } while (String.IsNullOrEmpty(userGuess) || userGuess.Length > 1 || !(Regex.IsMatch(userGuess, @"[a-zA-Z]")));
 
             Console.WriteLine(userGuess == gateWithoutBallName ?
-                    $"Congratulations your guess of  {userGuess} is correct! Gate {gateWithoutBallName} does not have a ball!" :
+                    $"Congratulations your guess of {userGuess} is correct! Gate {gateWithoutBallName} does not have a ball!" :
                     $"Sorry your guess of {userGuess} is wrong! Gate {gateWithoutBallName} does not have a ball!");
             
         }
